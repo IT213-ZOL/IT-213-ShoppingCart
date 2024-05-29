@@ -1,28 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>Login Form with CAPTCHA</title>
-  <link rel="stylesheet" href="login.css">
+  <link rel="shortcut icon" type="image/x-icon" href="pic/logo.jpg">
+  <title>Log in now to start Shopping! | Zol Online Shop</title>
+  <link rel="stylesheet" href="css/login.css">
 </head>
+
 <body>
 
   <div class="login-container">
+    <img src="pic/logo.jpg" alt="Zol Logo" class="logo">
     <h2 class="Header">ZOL Online Shop</h2>
     <h4>Account Login</h4>
     <form id="loginForm">
-      <input type="text" id="username" placeholder="Username" required>
+      <input type="email" id="username" placeholder="Email" required>
       <input type="password" id="password" placeholder="Password" required>
-      <div id="captchaContainer"></div>
-      <input type="text" id="captchaInput" placeholder="Enter CAPTCHA" required>
       <button type="submit">Login</button>
-	   <div class="signup-container">
+      <div class="signup-container">
         <span>Don't have an account?</span>
-       <a href="signup.html">Sign Up</a>
+        <a href="signup.html">Sign Up</a>
       </div>
     </form>
   </div>
-  
+
+  <!-- My Firebase SDKs for the database of the accounts-->
+  <script type="module" src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js"></script>
+  <script type="module" src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js"></script>
+  <script type="module" src="https://www.gstatic.com/firebasejs/10.12.0/firebase-database.js"></script>
+  <script type="module" src="js/script.js"></script>
 </body>
-<script src="script.js"></script>
+
 </html>

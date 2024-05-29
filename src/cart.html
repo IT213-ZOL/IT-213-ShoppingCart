@@ -1,65 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>Cart</title>
-  <link rel="stylesheet" href="dash_style.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="pic/logo.jpg">
+  <title>Zol Online Shop | Cart</title>
+  <link rel="stylesheet" href="css/dash_style.css" />
   <link rel="stylesheet" href="font-awesome/css/all.min.css">
-   <script src="script.js"></script>
+  <script src="js/cart.js" defer></script>
+  <style>
+    .cart-item {
+      background-color: #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      border-radius: 25px;
+    }
+
+    .cart-item button {
+      background-color: green;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+      margin-left: 10px;
+      border-radius: 20px;
+    }
+
+    .cart-item button:hover {
+      opacity: 0.8;
+    }
+
+    .cart-item img {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+    }
+
+    .checkout-button {
+      display: flex;
+      background-color: green;
+      color: white;
+      padding: 8px 12px;
+      border: none;
+      cursor: pointer;
+      border-radius: 20px;
+      margin-left: 92%;
+    }
+
+    .checkout-button:hover {
+      background-color: darkgreen;
+    }
+
+    @media screen and(max-width:1100px) {
+      .checkout-button {
+        flex-direction: column;
+        background-color: green;
+        color: white;
+        padding: 8px 12px;
+        cursor: pointer;
+      }
+    }
+  </style>
 </head>
+
 <body>
   <div class="container">
- <nav>
+    <nav>
       <div class="navbar">
         <div class="logo">
           <img src="pic/logo.jpg" alt="">
           <h1>Zol Online Shop</h1>
         </div>
         <ul>
-		<!-- side bar-->
-	      <li><a href="dashboard.html">
-            <i class="fas fa-home"></i>
-            <span class="nav-item">Home</span>
-          </a>
-          </li>
-          <li><a href="#">
-            <i class="fas fa-user"></i>
-            <span class="nav-item">Profile</span>
-          </a>
-          </li>
-          <li><a href="cart.html">
-            <i class="fas fa-shopping-cart"></i>
-            <span class="cart">0</span>
-          </a>
-          </li>
-          <li><a href="#">
-            <i class="fas fa-heart"></i>
-            <span class="nav-item">Wishlist</span>
-          </a>
-          </li>
-          <li><a href="#">
-            <i class="fas fa-truck"></i>
-            <span class="nav-item">Shipping details</span>
-          </a>
-          </li>
-		  <li><a href="#">
-            <i class="fas fa-tag"></i>
-            <span class="nav-item">Coupons</span>
-          </a>
-          </li>
-          <li><a href="#">
-            <i class="fas fa-cog"></i>
-            <span class="nav-item">Setting</span>
-          </a>
-          </li>
-          <li><a href="#">
-            <i class="fas fa-question-circle"></i>
-            <span class="nav-item">Help</span>
-          </a>
-          </li>
-          <li><a href="#" class="logout">
-            <i class="fas fa-sign-out-alt"></i>
-            <span class="nav-item">Logout</span>
-          </a>
+          <!-- side bar-->
+          <li><a href="dashboard.html"><i class="fas fa-home"></i><span class="nav-item">Home</span></a></li>
+          <li><a href="#"><i class="fas fa-user"></i><span class="nav-item">Profile</span></a></li>
+          <li><a href="cart.html"><i class="fas fa-shopping-cart"></i><span class="cart">Cart</span></a></li>
+          <li><a href="wishlist.html"><i class="fas fa-heart"></i><span class="nav-item">Wishlist</span></a></li>
+          <li><a href="#"><i class="fas fa-cog"></i><span class="nav-item">Setting</span></a></li>
+          <li><a href="#"><i class="fas fa-question-circle"></i><span class="nav-item">Help</span></a></li>
+          <li><a href="#" class="logout"><i class="fas fa-sign-out-alt"></i><span class="nav-item">Logout</span></a>
           </li>
         </ul>
       </div>
@@ -70,13 +91,16 @@
         <p>Cart</p>
       </div>
       <div class="main-body">
-        <div class="cart-container">
-          <!-- diri mabutang ang mga items na gi add to cart -->
+        <div>
+          <h2>Total Price: ₱<span id="total-price"></span></h2>
         </div>
+        <div class="cart-container" id="cart-container">
+          <!-- Cart items will display here -->
+        </div>
+        <button onclick="checkout()" class="checkout-button">Checkout</button>
       </div>
     </section>
   </div>
-
- 
 </body>
+
 </html>

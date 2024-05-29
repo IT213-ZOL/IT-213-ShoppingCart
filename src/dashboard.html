@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>Dashboard</title>
-  <link rel="stylesheet" href="dash_style.css" />
-     <link rel="stylesheet" href="font-awesome/css/all.min.css">
- <script src="script.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="pic/logo.jpg">
+  <title>Zol Online Shop | Home Page</title>
+  <link rel="stylesheet" href="css/dash_style.css" />
+  <link rel="stylesheet" href="font-awesome/css/all.min.css">
+  <script type="module" src="js/script.js" defer></script>
 </head>
+
 <body>
   <div class="container">
     <nav>
@@ -15,170 +19,62 @@
           <h1>Zol Online Shop</h1>
         </div>
         <ul>
-		<!-- side bar-->
-		 <li><a href="dashboard.html">
-            <i class="fas fa-home"></i>
-            <span class="nav-item">Home</span>
-          </a>
-          </li>
+          <!-- side bar-->
+          <li><a href="dashboard.html">
+              <i class="fas fa-home"></i>
+              <span class="nav-item">Home</span>
+            </a></li>
           <li><a href="#">
-            <i class="fas fa-user"></i>
-            <span class="nav-item">Profile</span>
-          </a>
-          </li>
+              <i class="fas fa-user"></i>
+              <span class="nav-item">Profile</span>
+            </a></li>
+          <li><a href="cart.html">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="cart">Cart</span>
+            </a></li>
+          <li><a href="wishlist.html">
+              <i class="fas fa-heart"></i>
+              <span class="nav-item">Wishlist</span>
+            </a></li>
           <li><a href="#">
-            <i class="fas fa-heart"></i>
-            <span class="nav-item">Wishlist</span>
-          </a>
-          </li>
+              <i class="fas fa-cog"></i>
+              <span class="nav-item">Setting</span>
+            </a></li>
           <li><a href="#">
-            <i class="fas fa-truck"></i>
-            <span class="nav-item">Shipping details</span>
-          </a>
-          </li>
-		  <li><a href="#">
-            <i class="fas fa-tag"></i>
-            <span class="nav-item">Coupons</span>
-          </a>
-          </li>
-          <li><a href="#">
-            <i class="fas fa-cog"></i>
-            <span class="nav-item">Setting</span>
-          </a>
-          </li>
-          <li><a href="#">
-            <i class="fas fa-question-circle"></i>
-            <span class="nav-item">Help</span>
-          </a>
-          </li>
+              <i class="fas fa-question-circle"></i>
+              <span class="nav-item">Help</span>
+            </a></li>
           <li><a href="#" class="logout">
-            <i class="fas fa-sign-out-alt"></i>
-            <span class="nav-item">Logout</span>
-          </a>
-          </li>
+              <i class="fas fa-sign-out-alt"></i>
+              <span class="nav-item">Logout</span>
+            </a></li>
         </ul>
       </div>
     </nav>
 
     <section class="main">
-      <div class="main-top">
-        <p>Explore with Us!</p>
-      </div>
       <div class="main-body">
-        <h1>Shop Now!</h1>
-		  <a href="cart.html">
-          <i class="fas fa-shopping-cart"></i>
-          <span class="cart">0</span>
-        </a>
-        <!-- search bar-->
-      <div class="search_bar">
-        <input type="search" placeholder="Search items here...">
-        <select name="" id="">
-          <option>Category</option>
-          <option>Shoes</option>
-          <option>Phones</option>
-          <option>AirPods</option>
-          <option>Accessories</option>
-          <option>Smart Watches</option>
-        </select>
-        <select class="filter">
-          <option>Filter</option>
-        </select>
-      </div>
-
-      <div class="tags_bar">
-        <div class="tag">
-          <i class="fas fa-times"></i>
-          <span>Accessories</span>
+        <div class="search_bar">
+          <input type="text" id="searchInput" class="search-bar-input" placeholder="Search products...">
+          <div id="search-results"></div>
+          <select>
+            <option>Category</option>
+            <option>Shoes</option>
+            <option>Phones</option>
+            <option>AirPods</option>
+            <option>Accessories</option>
+            <option>Smart Watches</option>
+          </select>
+          <select class="filter">
+            <option>Filter</option>
+          </select>
         </div>
-        <div class="tag">
-          <i class="fas fa-times"></i>
-          <span>Phones</span>
-        </div>
-        <div class="tag">
-          <i class="fas fa-times"></i>
-          <span>Shoes</span>
-        </div>
-        <div class="tag">
-          <i class="fas fa-times"></i>
-          <span>AirPods</span>
+        <div class="row">
+          <p>There are more than <span>15</span> Items</p>
+          <a href="view all.html">View all</a>
         </div>
       </div>
-
-      <div class="row">
-        <p>There are more than <span>15</span> Items</p>
-        <a href="view all.html">View all</a>
-      </div>
-
-      <!--Some of our items-->
-      <div class="product_card">
-        <div class="product_details">
-          <div class="img">
-            <img src="pic/shoes.png" alt="Shoes">
-          </div>
-          <div class="text">
-            <h2>Nike Dunk High "Lakers Edition"</h2>
-            <span>₱4,599.00</span>
-          </div>
-        </div>
-		
-         <div class="product_action">
-         <button class="add-to-cart">Add to Cart</button>
-         </div>
-       
-
-      </div>
-      
-      <div class="product_card">
-        <div class="product_details">
-          <div class="img">
-            <img src="pic/shoes2.png" alt="Shoes1">
-          </div>
-          <div class="text">
-            <h2>Vans Old Skool</h2>
-            <span>₱1,990.00</span>
-          </div>
-        </div>
-		
-         <div class="product_action">
-         <button class="add-to-cart">Add to Cart</button>
-         </div>
-      </div>
-
-      <div class="product_card">
-        <div class="product_details">
-          <div class="img">
-            <img src="pic/phone.png" alt="Phone">
-          </div>
-          <div class="text">
-            <h2>iPhone 15 Pro Max</h2>
-            <span>₱84,500.00</span>
-          </div>
-        </div>
-		
-          <div class="product_action">
-          <button class="add-to-cart">Add to Cart</button>
-          </div>
-      </div>
-	  
-	  <div class="product_card">
-        <div class="product_details">
-          <div class="img">
-            <img src="pic/phone2.png" alt="Phone1">
-          </div>
-          <div class="text">
-            <h2>Samsung Galaxy S24 Ultra</h2>
-            <span>₱83,500.00</span>
-          </div>
-        </div>
-		
-        <div class="product_action">
-          <button class="add-to-cart">Add to Cart</button>
-          </div>
-
-    </div>
     </section>
-  </div>
-
-</body>
-</html>
+    <div class="product-list">
+      <!-- Products will be loaded here by fetching products.json file-->
+    </div>

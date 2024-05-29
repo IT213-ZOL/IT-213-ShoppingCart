@@ -1,0 +1,77 @@
+[
+  {
+    "name": "Nike Dunk High Lakers Edition",
+    "price": 4599.00,
+    "imgSrc": "pic/shoes.png"
+  },
+  {
+    "name": "Vans Old Skool",
+    "price": 1990.00,
+    "imgSrc": "pic/shoes2.png"
+  },
+  {
+    "name": "iPhone 15 Pro Max",
+    "price": 84500.00,
+    "imgSrc": "pic/phone.png"
+  },
+  {
+    "name": "Samsung Galaxy S24 Ultra",
+    "price": 83500.00,
+    "imgSrc": "pic/phone2.png"
+  },
+  {
+    "name": "Nike Air Max Pulse",
+    "price": 3999.00,
+    "imgSrc": "pic/shoes3.png"
+  },
+  {
+    "name": "Nike Air Force 1 High 07",
+    "price": 6990.00,
+    "imgSrc": "pic/shoes4.png"
+  },
+  {
+    "name": "Redmagic 9 Pro",
+    "price": 45999.00,
+    "imgSrc": "pic/phone3.png"
+  },
+  {
+    "name": "Asus ROG Phone 8 Pro",
+    "price": 50995.00,
+    "imgSrc": "pic/phone4.png"
+  },
+  {
+    "name": "AirPods Pro (2nd Generation)",
+    "price": 14990.00,
+    "imgSrc": "pic/AirPods.png"
+  },
+  {
+    "name": "AirPods Max",
+    "price": 32990.00,
+    "imgSrc": "pic/AirPods2.png"
+  },
+  {
+    "name": "Apple Watch Series 9",
+    "price": 26990.00,
+    "imgSrc": "pic/Apple.png"
+  },
+  {
+    "name": "Apple Watch Ultra 2",
+    "price": 54990.00,
+    "imgSrc": "pic/Apple2.png"
+  },
+  {
+    "name": "REDMAGIC DAO 150W GaN Charger",
+    "price": 10990.00,
+    "imgSrc": "pic/Charger.png"
+  },
+  {
+    "name": "REDMAGIC Cyberbuds DAO TWS",
+    "price": 14990.00,
+    "imgSrc": "pic/Airbuds.png"
+  },
+  {
+    "name": "Apple Watch SE",
+    "price": 15990.00,
+    "imgSrc": "pic/Apple3.png"
+  }
+]

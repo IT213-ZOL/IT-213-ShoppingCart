@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>Sign Up Form</title>
-   <link rel="stylesheet" href="signup.css">
+  <link rel="shorcut icon" type=x-icon href="pic/logo.jpg">
+  <title>Zol Online Shop | Sign-up</title>
+  <link rel="stylesheet" href="css/signup.css">
 </head>
+
 <body>
 
   <div class="signup-container">
-    <h2>Sign Up</h2>
+    <h3>Sign Up</h3>
     <form id="signupForm">
       <input type="text" id="signupUsername" placeholder="Username" required>
       <input type="email" id="email" placeholder="Email" required>
       <input type="password" id="signupPassword" placeholder="Password" required>
-	  <input type="Confirm Password" id="signupPassword" placeholder="Confirm Password" required>
-      <button onclick="signup">Sign Up</button>
-      <span>Already have an account?</span> <a href="loginform.html">Log in now</a>
+      <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+      <button type="submit">Sign Up</button>
+      <span>Already have an account?</span> <a href="loginform.html">Back to Login</a>
     </form>
   </div>
 
+  <script type="module" src="js/script.js"></script>
 </body>
-<script src="script.js"></script> 
+
 </html>

@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>View All Items</title>
-  <link rel="stylesheet" href="dash_style.css" />
+  <link rel="shorcut icon" type=x-icon href="pic/logo.jpg">
+  <title>Zol Online Shop | All Items</title>
+  <link rel="stylesheet" href="css/dash_style.css" />
   <link rel="stylesheet" href="font-awesome/css/all.min.css">
-  <script src="script.js"></script>
+  <script type="module" src="js/script.js" defer></script>
 </head>
+
 <body>
   <div class="container">
     <nav>
@@ -15,302 +18,51 @@
           <h1>Zol Online Shop</h1>
         </div>
         <ul>
-		 <li><a href="dashboard.html">
-            <i class="fas fa-home"></i>
-            <span class="nav-item">Home</span>
-          </a>
-          </li>
+          <!-- side bar-->
+          <li><a href="dashboard.html">
+              <i class="fas fa-home"></i>
+              <span class="nav-item">Home</span>
+            </a></li>
           <li><a href="#">
-            <i class="fas fa-user"></i>
-            <span class="nav-item">Profile</span>
-          </a>
-          </li>
+              <i class="fas fa-user"></i>
+              <span class="nav-item">Profile</span>
+            </a></li>
+          <li><a href="cart.html">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="cart">Cart</span>
+            </a></li>
+          <li><a href="wishlist.html">
+              <i class="fas fa-heart"></i>
+              <span class="nav-item">Wishlist</span>
+            </a></li>
           <li><a href="#">
-            <i class="fas fa-shopping-cart"></i>
-            <span class="nav-item">Cart</span>
-          </a>
-          </li>
+              <i class="fas fa-cog"></i>
+              <span class="nav-item">Setting</span>
+            </a></li>
           <li><a href="#">
-            <i class="fas fa-heart"></i>
-            <span class="nav-item">Wishlist</span>
-          </a>
-          </li>
-          <li><a href="#">
-            <i class="fas fa-truck"></i>
-            <span class="nav-item">Shipping details</span>
-          </a>
-          </li>
-		  <li><a href="#">
-            <i class="fas fa-tag"></i>
-            <span class="nav-item">Coupons</span>
-          </a>
-          </li>
-          <li><a href="#">
-            <i class="fas fa-cog"></i>
-            <span class="nav-item">Setting</span>
-          </a>
-          </li>
-          <li><a href="#">
-            <i class="fas fa-question-circle"></i>
-            <span class="nav-item">Help</span>
-          </a>
-          </li>
+              <i class="fas fa-question-circle"></i>
+              <span class="nav-item">Help</span>
+            </a></li>
           <li><a href="#" class="logout">
-            <i class="fas fa-sign-out-alt"></i>
-            <span class="nav-item">Logout</span>
-          </a>
-          </li>
+              <i class="fas fa-sign-out-alt"></i>
+              <span class="nav-item">Logout</span>
+            </a></li>
         </ul>
       </div>
     </nav>
-<!-- list sa mga items... wapa nahuman-->
+
     <section class="main">
       <div class="main-top">
-        <p>All Items</p>
+        <p>View All Products</p>
       </div>
-	    <div class="back-button">
-          <a href="dashboard.html"><i class="fas fa-arrow-left"></i>Back</a>
-        </div>
+      <div class="back-button">
+        <a href="dashboard.html"><i class="fas fa-arrow-left"></i> Back</a>
+      </div>
       <div class="main-body">
-        <div class="product_card">
-          <div class="product_details">
-            <div class="img">
-              <img src="pic/shoes.png" alt="Shoes">
-            </div>
-            <div class="text">
-              <h2>Nike Dunk High "Lakers Edition"</h2>
-              <span>₱4,599.00</span>
-            </div>
-          </div>
-          <div class="product_action">
-            <button class="add-to-cart">Add to Cart</button>
-            </div>
-        </div>
-        
-		      <div class="product_card">
-        <div class="product_details">
-          <div class="img">
-            <img src="pic/shoes2.png" alt="Shoes">
-          </div>
-          <div class="text">
-            <h2>Vans Old Skool</h2>
-            <span>₱1,990.00</span>
-          </div>
-        </div>
-        <div class="product_action">
-          <button>Add to Cart</button>
-        </div>
-      </div>
-	  
-	   <div class="product_card">
-        <div class="product_details">
-          <div class="img">
-            <img src="pic/shoes3.png" alt="Shoes">
-          </div>
-          <div class="text">
-            <h2>Nike Air Max Pulse</h2>
-            <span>₱3,999.00</span>
-          </div>
-        </div>
-        <div class="product_action">
-          <button>Add to Cart</button>
-        </div>
-      </div>
-	  
-	  <div class="product_card">
-        <div class="product_details">
-          <div class="img">
-            <img src="pic/shoes4.png" alt="Shoes">
-          </div>
-          <div class="text">
-            <h2>Nike Air Force 1 High'07'</h2>
-            <span>₱6,990.00</span>
-          </div>
-        </div>
-		
-        <div class="product_action">
-          <button>Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="product_card">
-        <div class="product_details">
-          <div class="img">
-            <img src="pic/phone.png" alt="Phone">
-          </div>
-          <div class="text">
-            <h2>iPhone 15 Pro Max</h2>
-            <span>₱84,500.00</span>
-          </div>
-        </div>
-        <div class="product_action">
-          <button>Add to Cart</button>
-        </div>
-      </div>
-	  
-	  <div class="product_card">
-        <div class="product_details">
-          <div class="img">
-            <img src="pic/phone2.png" alt="Phone">
-          </div>
-          <div class="text">
-            <h2>Samsung Galaxy S24 Ultra</h2>
-            <span>₱83,500.00</span>
-          </div>
-        </div>
-		
-        <div class="product_action">
-          <button>Add to Cart</button>
-        </div>
-      </div>
-	  
-	        <div class="product_card">
-        <div class="product_details">
-          <div class="img">
-            <img src="pic/phone3.png" alt="Phone">
-          </div>
-          <div class="text">
-            <h2>Redmagic 9 Pro</h2>
-            <span>₱45,999.00</span>
-          </div>
-        </div>
-        <div class="product_action">
-          <button>Add to Cart</button>
-        </div>
-      </div>
-
-      <div class="product_card">
-        <div class="product_details">
-          <div class="img">
-            <img src="pic/phone4.png" alt="Phone">
-          </div>
-          <div class="text">
-            <h2>Asus ROG Phone 8 Pro</h2>
-            <span>₱50,995.00</span>
-          </div>
-        </div>
-        <div class="product_action">
-          <button>Add to Cart</button>
-        </div>
-      </div>
-	  
-	  <div class="product_card">
-        <div class="product_details">
-          <div class="img">
-            <img src="pic/AirPods.png" alt="AirPods">
-          </div>
-          <div class="text">
-            <h2>AirPods Pro (2nd Generation)</h2>
-            <span>₱14,990.00</span>
-          </div>
-        </div>
-		
-        <div class="product_action">
-          <button>Add to Cart</button>
-        </div>
-      </div> 
-
-      <div class="product_card">
-        <div class="product_details">
-          <div class="img">
-            <img src="pic/AirPods2.png" alt="AirPods">
-          </div>
-          <div class="text">
-            <h2>AirPods Max</h2>
-            <span>₱32,990.00</span>
-          </div>
-        </div>
-		
-        <div class="product_action">
-          <button>Add to Cart</button>
-        </div>
-      </div> 
-        
-      <div class="product_card">
-        <div class="product_details">
-          <div class="img">
-            <img src="pic/Apple.png" alt="Watch">
-          </div>
-          <div class="text">
-            <h2>Apple Watch Series 9</h2>
-            <span>₱26,990.00</span>
-          </div>
-        </div>
-		
-        <div class="product_action">
-          <button>Add to Cart</button>
-        </div>
-      </div> 
-        
-      <div class="product_card">
-        <div class="product_details">
-          <div class="img">
-            <img src="pic/Apple2.png" alt="Watch">
-          </div>
-          <div class="text">
-            <h2>Apple Watch Ultra 2</h2>
-            <span>₱54,990.00</span>
-          </div>
-        </div>
-		
-        <div class="product_action">
-          <button>Add to Cart</button>
-        </div>
-      </div> 
-        
-          
-      <div class="product_card">
-        <div class="product_details">
-          <div class="img">
-            <img src="pic/Charger.png" alt="Charger">
-          </div>
-          <div class="text">
-            <h2>REDMAGIC DAO 150W GaN Charger</h2>
-            <span>₱10,990.00</span>
-          </div>
-        </div>
-		
-        <div class="product_action">
-          <button>Add to Cart</button>
-        </div>
-      </div> 
-        
-      <div class="product_card">
-        <div class="product_details">
-          <div class="img">
-            <img src="pic/Airbuds.png" alt="Airbuds">
-          </div>
-          <div class="text">
-            <h2>REDMAGIC Cyberbuds DAO TWS</h2>
-            <span>₱14,990.00</span>
-          </div>
-        </div>
-		
-        <div class="product_action">
-          <button>Add to Cart</button>
-        </div>
-      </div> 
-        
-      <div class="product_card">
-        <div class="product_details">
-          <div class="img">
-            <img src="pic/Apple3.png" alt="Watch">
-          </div>
-          <div class="text">
-            <h2>Apple Watch SE</h2>
-            <span>₱15,990.00</span>
-          </div>
-        </div>
-		
-        <div class="product_action">
-          <button>Add to Cart</button>
-        </div>
-      </div> 
-
-
+        <!--  Products will be loaded here by fetching products.json file-->
       </div>
     </section>
   </div>
-
 </body>
+
 </html>
